@@ -28,8 +28,6 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ```shell
 /
 ├── checkpoints/  # ....
-│   ├── 0003_c1s6_015971_00.jpg
-│   └── 0003_c6s3_088392_00.jpg
 │
 ├── data/dump/  # ....
 │
