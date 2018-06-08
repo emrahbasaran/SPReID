@@ -23,6 +23,18 @@ python main.py --extract_features 1 --train_set "train_market" --eval_split "mar
 python main.py --extract_features 1 --train_set "train_duke" --eval_split "duke_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
 python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuhk03_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
 ```
+
+## Directories & Files
+```shell
+/
+├── probe
+│   ├── 0003_c1s6_015971_00.jpg
+│   ├── 0003_c3s3_064744_00.jpg
+│   ├── 0003_c4s6_015641_00.jpg
+│   ├── 0003_c5s3_065187_00.jpg
+│   └── 0003_c6s3_088392_00.jpg
+```
+
 ## Citation
 ```
 @article{kalayeh2018human,
