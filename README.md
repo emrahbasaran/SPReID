@@ -48,6 +48,11 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 │   ├── train_cuhk03.txt
 │   ├── train_duke.txt
 │   └── train_market.txt
+│
+├── README.md
+├── datachef.py
+├── main.py
+└── modelx.py
 ```
 
 ## Citation
