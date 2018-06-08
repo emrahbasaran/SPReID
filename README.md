@@ -33,16 +33,21 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 │
 ├── data/dump/  # ....
 │
-├── evaluation_features/
+├── evaluation_features/ # ....
 │
-├── evaluation_list/
+├── evaluation_list/ # ....
+│   ├── cuhk03_gallery.txt
+│   ├── cuhk03_query.txt
+│   ├── duke_gallery.txt
+│   ├── duke_query.txt
+│   ├── market_gallery.txt
+│   └── market_query.txt
 │
-├── train_list/
-│   ├── 0003_c1s6_015971_00.jpg
-│   ├── 0003_c3s3_064744_00.jpg
-│   ├── 0003_c4s6_015641_00.jpg
-│   ├── 0003_c5s3_065187_00.jpg
-│   └── 0003_c6s3_088392_00.jpg
+├── train_list/ # ....
+│   ├── train_10d.txt
+│   ├── train_cuhk03.txt
+│   ├── train_duke.txt
+│   └── train_market.txt
 ```
 
 ## Citation
