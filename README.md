@@ -27,7 +27,7 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ## Directories & Files
 ```shell
 /
-├── probe
+├── checkpoints/  # ....
 │   ├── 0003_c1s6_015971_00.jpg
 │   ├── 0003_c3s3_064744_00.jpg
 │   ├── 0003_c4s6_015641_00.jpg
