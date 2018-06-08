@@ -29,6 +29,16 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 /
 ├── checkpoints/  # ....
 │   ├── 0003_c1s6_015971_00.jpg
+│   └── 0003_c6s3_088392_00.jpg
+│
+├── data/dump/  # ....
+│
+├── evaluation_features/
+│
+├── evaluation_list/
+│
+├── train_list/
+│   ├── 0003_c1s6_015971_00.jpg
 │   ├── 0003_c3s3_064744_00.jpg
 │   ├── 0003_c4s6_015641_00.jpg
 │   ├── 0003_c5s3_065187_00.jpg
