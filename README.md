@@ -61,8 +61,14 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
     <th colspan="2">CUHK03</th>
     <th colspan="2">DukeMTMC-reID</th>
   </tr>
-   <tr>
+  <tr>
     <th>Model</th>
+    <th>mAP(%)</th><th>rank-1</th>
+    <th>mAP(%)</th><th>rank-1</th>
+    <th>mAP(%)</th><th>rank-1</th>
+  </tr>
+  <tr>
+    <th>SPReID<sup>w/fg</sup></th>
     <th>mAP(%)</th><th>rank-1</th>
     <th>mAP(%)</th><th>rank-1</th>
     <th>mAP(%)</th><th>rank-1</th>
