@@ -41,11 +41,11 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 │   ├── market_gallery.txt
 │   └── market_query.txt
 │
-├── train_list/ # 
-│   ├── train_10d.txt
-│   ├── train_cuhk03.txt
-│   ├── train_duke.txt
-│   └── train_market.txt
+├── train_list/ # image lists to train the models
+│   ├── train_10d.txt # training images collected from 10 datasets
+│   ├── train_cuhk03.txt # training images from cuhk03
+│   ├── train_duke.txt # training images from duke
+│   └── train_market.txt # training images from market
 │
 ├── README.md
 ├── datachef.py
