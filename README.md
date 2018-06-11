@@ -69,9 +69,9 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
   </tr>
   <tr>
     <th>SPReID<sup>w/fg</sup></th>
-    <th>mAP(%)</th><th>rank-1</th>
-    <th>mAP(%)</th><th>rank-1</th>
-    <th>mAP(%)</th><th>rank-1</th>
+    <th>77.62</th><th>90.88</th>
+    <th>-</th><th>87.69</th>
+    <th>65.66</th><th>81.73</th>
   </tr>
 </table>
 
