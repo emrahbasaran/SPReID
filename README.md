@@ -27,11 +27,11 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ## Directories & Files
 ```shell
 /
-├── checkpoints/  # ....
+├── checkpoints/  # checkpoint models are saved into this directory
 │
-├── data/dump/  # ....
+├── data/dump/  # inceptionv3 weights pre-trained on imagenet
 │
-├── evaluation_features/ # ....
+├── evaluation_features/ # extracted features are saved into this directory
 │
 ├── evaluation_list/ # ....
 │   ├── cuhk03_gallery.txt
