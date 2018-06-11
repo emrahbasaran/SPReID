@@ -53,6 +53,9 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 └── modelx.py
 ```
 
+## Results
+
+
 ## Citation
 ```
 @article{kalayeh2018human,
