@@ -33,7 +33,7 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 │
 ├── evaluation_features/ # extracted features are saved into this directory
 │
-├── evaluation_list/ # In this directory, there are two image lists for each evaluation datasets, one for gallery and one for query
+├── evaluation_list/ # In this directory, there are two image lists to extract features for each evaluation datasets, one for gallery and one for query
 │   ├── cuhk03_gallery.txt
 │   ├── cuhk03_query.txt
 │   ├── duke_gallery.txt
@@ -41,7 +41,7 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 │   ├── market_gallery.txt
 │   └── market_query.txt
 │
-├── train_list/ # ....
+├── train_list/ # 
 │   ├── train_10d.txt
 │   ├── train_cuhk03.txt
 │   ├── train_duke.txt
