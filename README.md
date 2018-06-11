@@ -73,6 +73,12 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
     <th>-</th><th>87.69</th>
     <th>65.66</th><th>81.73</th>
   </tr>
+  <tr>
+    <th>SPReID<sup>w/fg-ft</sup></th>
+    <th>80.54</th><th>92.34</th>
+    <th>-</th><th>89.68</th>
+    <th>69.29</th><th>83.80</th>
+  </tr>
 </table>
 
 ## Citation
