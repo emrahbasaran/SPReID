@@ -54,12 +54,17 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ```
 
 ## Results
-|               | > | Market-1501   |     CUHK03    | DukeMTMC-reID |
-| ------------- | ------------- | ------------- | ------------- |
-| First Header  | mAP(%) | rank-1 |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>555 77 854</td>
+    <td>555 77 855</td>
+  </tr>
+</table>
 
 ## Citation
 ```
