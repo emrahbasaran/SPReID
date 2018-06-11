@@ -54,7 +54,7 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ```
 
 ## Results
-|               | Market-1501   |     CUHK03    | DukeMTMC-reID |
+|               | > | Market-1501   |     CUHK03    | DukeMTMC-reID |
 | ------------- | ------------- | ------------- | ------------- |
 | First Header  | mAP(%) | rank-1 |
 | ------------- | ------------- |
