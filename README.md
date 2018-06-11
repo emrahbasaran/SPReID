@@ -54,15 +54,18 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 ```
 
 ## Results
-<table style="width:100%">
+<table>
   <tr>
-    <th>Name</th>
-    <th colspan="2">Telephone</th>
+    <th></th>
+    <th colspan="2">Market-1501</th>
+    <th colspan="2">CUHK03</th>
+    <th colspan="2">DukeMTMC-reID</th>
   </tr>
-  <tr>
-    <td>Bill Gates</td>
-    <td>555 77 854</td>
-    <td>555 77 855</td>
+   <tr>
+    <th>Model</th>
+    <th>mAP(%)</th><th>rank-1</th>
+    <th>mAP(%)</th><th>rank-1</th>
+    <th>mAP(%)</th><th>rank-1</th>
   </tr>
 </table>
 
