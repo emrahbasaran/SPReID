@@ -1,5 +1,5 @@
 #  Human Semantic Parsing for Person Re-identification
-Code for our CVPR 2018 paper - Human Semantic Parsing for Person Re-identification
+Code for our CVPR 2018 paper - Human Semantic Parsing for Person Re-identification </br>
 Using this code, SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results mentioned in Table 5 with weight sharing setting in the paper can be reproduced.
 
 ## Directories & Files
