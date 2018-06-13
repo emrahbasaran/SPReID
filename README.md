@@ -38,9 +38,9 @@ cd $SPREID_ROOT
 # train SPReID on 10 datasets
 python main.py --train_set "train_10d" --label_dim "16803" --scales_reid "512,170" --optimizer "lr:0.01--lr_pretrained:0.01" --dataset_folder "/path/to/the/dataset"
 # fine-tune SPReID on evaluation datasets (Market-1501, DukeMTMC-reID, CUHK03) with high-resolution images
-python main.py --train_set "train_market" --label_dim_ft "751" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
-python main.py --train_set "train_duke" --label_dim_ft "702" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
-python main.py --train_set "train_cuhk03" --label_dim_ft "1367" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
+python main.py --train_set "train_market" --label_dim_ft "751" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --max_iter "50000" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
+python main.py --train_set "train_duke" --label_dim_ft "702" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --max_iter "50000" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
+python main.py --train_set "train_cuhk03" --label_dim_ft "1367" --scales_reid "778,255" --optimizer "lr:0.01--lr_pretrained:0.001" --max_iter "50000" --dataset_folder "/path/to/the/dataset" --model_path_for_ft "/path/to/the/model"
 ```
 ## Feature Extraction
 ```shell 
