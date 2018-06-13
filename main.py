@@ -11,7 +11,7 @@ import time, os, copy, random, h5py
 from argparse import ArgumentParser
 import chainer
 import chainer.functions as F
-import chainer.links as L
+from chainer import link
 from chainer import optimizers, Variable, cuda, serializers
 from chainer.iterators import MultiprocessIterator
 from chainer.optimizer import WeightDecay, GradientClipping
@@ -34,11 +34,14 @@ def parse_args():
     def_GPUs = '0'
     # set checkpoint bigger than zero to load saved model from checkpoints folder
     def_checkpoint = 0
+    # set pre-trained model path for finetuning using evaluation datasets
+    def_model_path_for_ft = ''
 
     # label for the dataset
     def_dataset = 'ReID10Dx'
     # number of different ids in training data
     def_label_dim = '16803'
+    def_label_dim_ft = '16803'
     # the image list for feature extraction
     def_eval_split = 'cuhk03_gallery'
     # the image list for training
@@ -51,7 +54,7 @@ def parse_args():
     # loss report interval
     def_report_interval = 50
     # number of iterations for checkpoints
-    def_save_interval = 5000
+    def_save_interval = 20000
 
     def_project_folder = '.'
     def_dataset_folder = '/home/basaran/Documents/experiments/SpindleNet'
@@ -66,7 +69,9 @@ def parse_args():
     p.add_argument('--eval_split', default=def_eval_split, type=str)
     p.add_argument('--train_set', default=def_train_set, type=str)
     p.add_argument('--checkpoint', default=def_checkpoint, type=int)
+    p.add_argument('--model_path_for_ft', default=def_model_path_for_ft, type=str)
     p.add_argument('--label_dim', default=def_label_dim, type=str)
+    p.add_argument('--label_dim_ft', default=def_label_dim_ft, type=int)
     p.add_argument('--nb_processes', default=def_nb_processes, type=int)
     p.add_argument('--max_iter', default=def_max_iter, type=int)
     p.add_argument('--report_interval', default=def_report_interval, type=int)
@@ -244,6 +249,11 @@ model = Models.ReIDClassifier(predictor, args.label_dim[0], args)
 with model.init_scope():
     model.segmentation = Models.InceptionV3Classifier(
         Models.InceptionV3(args, dilated=True), [Models.Classifier(20)], args)
+
+if len(args.model_path_for_ft) > 0:
+    model = ResumeFromCheckpoint(args.model_path_for_ft, model)
+    model.classifiers = link.ChainList(Models.Conv(2048*3, args.label_dim_ft, 1, 1, 0, init_weights=None, pool=None,
+                                                   nobias=False))
 
 print 'Setup optimizer'
 opt = SetupOptimizer(model)
