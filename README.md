@@ -1,6 +1,6 @@
 #  Human Semantic Parsing for Person Re-identification
 Code for our CVPR 2018 paper - Human Semantic Parsing for Person Re-identification </br></br>
-Using this code, SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results mentioned in Table 5 (with weight sharing setting) in the paper can be reproduced. To download semantic parsing model (LIP_iter_30000.chainermodel), please use this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0).
+Using this code, SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results mentioned in Table 5 (with weight sharing setting) in the paper can be reproduced. To download the semantic parsing model (LIP_iter_30000.chainermodel), please use this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0).
 
 ## Directories & Files
 ```shell
@@ -25,7 +25,7 @@ Using this code, SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results ment
 │   ├── train_duke.txt # training images from duke
 │   └── train_market.txt # training images from market
 │
-├── README.md
+├── LIP_iter_30000.chainermodel # download this model using this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0)
 ├── datachef.py
 ├── main.py
 └── modelx.py
