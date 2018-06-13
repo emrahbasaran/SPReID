@@ -57,7 +57,7 @@ def parse_args():
     def_save_interval = 20000
 
     def_project_folder = '.'
-    def_dataset_folder = '/home/basaran/Documents/experiments/SpindleNet'
+    def_dataset_folder = ''
     p = ArgumentParser()
     p.add_argument('--extract_features', default=def_extract_features, type=int)
     p.add_argument('--minibatch', default=def_minibatch, type=int)
