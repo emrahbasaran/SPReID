@@ -33,11 +33,6 @@ Using this code, SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results ment
 
 
 ## Train
-### Train Human Semantic Parsing
-```shell 
-...
-```
-### Train SPReID
 ```shell 
 cd $SPREID_ROOT
 # train SPReID on 10 datasets
