@@ -1,5 +1,5 @@
 #  Human Semantic Parsing for Person Re-identification
-Code for our CVPR 2018 paper - Human Semantic Parsing for Person Re-identification </br></br>
+Code for our CVPR 2018 [paper](https://arxiv.org/abs/1804.00216) - Human Semantic Parsing for Person Re-identification </br></br>
 We have used [Chainer framework](https://chainer.org/) for the implementation. SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results mentioned in Table 5 (with weight sharing setting) in the paper can be reproduced using this code. To download the semantic parsing model (LIP_iter_30000.chainermodel), please use this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0). 
 
 ## Directories & Files
