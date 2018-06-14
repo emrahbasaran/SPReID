@@ -46,11 +46,11 @@ python main.py --train_set "train_cuhk03" --label_dim_ft "1367" --scales_reid "7
 ```shell 
 cd $SPREID_ROOT
 # Extract features using the model trained on 10 datasets. You should run this command two times for each dataset using --eval_split "DATASET_gallery" and --eval_split "DATASET_query"
-python main.py --extract_features 1 --train_set "train_10d" --eval_split "market_gallery" --scales_reid "512,170" --checkpoint 200000 --dataset_folder = "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_10d" --eval_split "market_gallery" --scales_reid "512,170" --checkpoint 200000 --dataset_folder "/path/to/the/dataset"
 # Extract features using the models trained on evaluation datasets.
-python main.py --extract_features 1 --train_set "train_market" --eval_split "market_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
-python main.py --extract_features 1 --train_set "train_duke" --eval_split "duke_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
-python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuhk03_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_market" --eval_split "market_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_duke" --eval_split "duke_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuhk03_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
 ```
 
 ## Results
