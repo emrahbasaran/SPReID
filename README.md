@@ -83,10 +83,11 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 
 ## Citation
 ```
-@article{kalayeh2018human,
-  title={Human Semantic Parsing for Person Re-identification},
-  author={Kalayeh, Mahdi M and Basaran, Emrah and Gokmen, Muhittin and Kamasak, Mustafa E and Shah, Mubarak},
-  journal={arXiv preprint arXiv:1804.00216},
-  year={2018}
+@InProceedings{Kalayeh_2018_CVPR,
+author = {Kalayeh, Mahdi M. and Basaran, Emrah and Gökmen, Muhittin and Kamasak, Mustafa E. and Shah, Mubarak},
+title = {Human Semantic Parsing for Person Re-Identification},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
