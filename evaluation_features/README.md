@@ -1,5 +1,5 @@
 #  Human Semantic Parsing for Person Re-identification
-Code for our CVPR 2018 paper - Human Semantic Parsing for Person Re-identification </br></br>
+Code for our CVPR 2018 [paper](https://arxiv.org/abs/1804.00216) - Human Semantic Parsing for Person Re-identification </br></br>
 We have used [Chainer framework](https://chainer.org/) for the implementation. SPReID<sup>w/fg</sup> and SPReID<sup>w/fg-ft</sup> results mentioned in Table 5 (with weight sharing setting) in the paper can be reproduced using this code. To download the semantic parsing model (LIP_iter_30000.chainermodel), please use this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0). 
 
 ## Directories & Files
@@ -46,11 +46,11 @@ python main.py --train_set "train_cuhk03" --label_dim_ft "1367" --scales_reid "7
 ```shell 
 cd $SPREID_ROOT
 # Extract features using the model trained on 10 datasets. You should run this command two times for each dataset using --eval_split "DATASET_gallery" and --eval_split "DATASET_query"
-python main.py --extract_features 1 --train_set "train_10d" --eval_split "market_gallery" --scales_reid "512,170" --checkpoint 200000 --dataset_folder = "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_10d" --eval_split "market_gallery" --scales_reid "512,170" --checkpoint 200000 --dataset_folder "/path/to/the/dataset"
 # Extract features using the models trained on evaluation datasets.
-python main.py --extract_features 1 --train_set "train_market" --eval_split "market_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
-python main.py --extract_features 1 --train_set "train_duke" --eval_split "duke_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
-python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuhk03_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder = "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_market" --eval_split "market_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_duke" --eval_split "duke_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
+python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuhk03_gallery" --scales_reid "778,255" --checkpoint 50000 --dataset_folder "/path/to/the/dataset"
 ```
 
 ## Results
@@ -83,10 +83,11 @@ python main.py --extract_features 1 --train_set "train_cuhk03" --eval_split "cuh
 
 ## Citation
 ```
-@article{kalayeh2018human,
-  title={Human Semantic Parsing for Person Re-identification},
-  author={Kalayeh, Mahdi M and Basaran, Emrah and Gokmen, Muhittin and Kamasak, Mustafa E and Shah, Mubarak},
-  journal={arXiv preprint arXiv:1804.00216},
-  year={2018}
+@InProceedings{Kalayeh_2018_CVPR,
+author = {Kalayeh, Mahdi M. and Basaran, Emrah and Gökmen, Muhittin and Kamasak, Mustafa E. and Shah, Mubarak},
+title = {Human Semantic Parsing for Person Re-Identification},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
