@@ -29,7 +29,7 @@ Please use the links below to download the semantic parsing model (LIP_iter_3000
 │   ├── train_duke.txt # training images from duke
 │   └── train_market.txt # training images from market
 │
-├── LIP_iter_30000.chainermodel # download this model using this [link](https://www.dropbox.com/s/22relvz5o9a3n05/LIP_iter_30000.chainermodel?dl=0)
+├── LIP_iter_30000.chainermodel # download this model using this [link](https://www.dropbox.com/s/nw5h0lw6xrzp5ks/LIP_iter_30000.chainermodel?dl=0)
 ├── datachef.py
 ├── main.py
 └── modelx.py
